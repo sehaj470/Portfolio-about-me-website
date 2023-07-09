@@ -1,0 +1,575 @@
+* {
+    border: 0; margin: 0; padding: 0;
+}
+
+.site-header {
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+/* ------- Left section of header ------------------- */
+
+.left-section {
+    width: 50%;
+    margin-left: 3%;
+    display: flex;
+    height: auto;
+    
+}
+
+.name-square-dot {
+    margin: 53px 10px 62px;
+    padding: 0px 4px 5px 8px;
+    color: #5cb85c;
+    font-size: 10px;
+    background-color: #5cb85c;
+    
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 44px 0px 54px calc((100% - 490px) * 0);
+}
+
+.position {
+    margin: 47px 0px 54px calc((100% - 490px) * 0);
+    padding: 2px 0px 0px 7px;
+    font: small-caption;
+    font-size: 18px;
+}
+
+/* ------- Right section of header----------------- */
+
+.right-section {
+    width: 50%;
+}
+
+.menu-bar {
+    margin: 47px 34px 54px 54px;
+    display: flex;
+    justify-content: right;
+}
+
+
+.menu-bar a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 5px 20px 0px 20px;
+    transition: 0.2s;
+}
+
+
+.menu-bar a:hover {
+    color: #5cb85c;
+    transition: all 0.2s;
+    transform: scale(1.2);
+
+}
+
+
+/* ------- Background and profile card---------------- */
+
+.body-left-section {
+    background-color: #e6dbcf;
+    height: 900px;
+    width: 40%;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.profile-card {
+    height: 591px;
+    width: 27%;
+    margin: 127px 0px 0px 250px;
+    background-color: #f5ece7;
+    grid-area: 1 / 1 / 2 / 2;
+    box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+
+}
+
+
+.parent-grid {
+    display: grid;
+}
+
+
+/* ------- text info right side---------------- */
+
+
+.info-about-me {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    grid-area: 1 / 1 / 2 / 2;
+    width: 35%;
+    margin: 100px 0px 0px 634px;
+}
+
+.hello-heading {
+    font-size: 100px;
+    font-weight: bolder;
+    margin: 55px 0px 0px 45px;
+}
+
+.caption {
+    font-size: 25px;
+    font-weight: 500;
+    height: 45px;
+    margin: 20px 0px 0px 50px;
+}
+
+.info-about-me p {
+    margin: 52px 0px 0px 50px;
+    width: 65%;
+}
+
+
+/* ------- profile card content ---------------- */
+
+
+.profile-card-content {
+    height: 591px;
+    display: grid;
+    grid-auto-rows: min-content;
+    /* justify-content: center; */
+    /* width: 365px; */
+}
+
+.profile-card-content img {
+    margin: auto;
+    margin-top: 55px;
+    height: 200px;
+    margin-top: 55px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+.profile-card-content h2 {
+    margin: auto;
+    margin-top: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 84px;
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+    text-align: center;
+
+}
+
+
+.line {
+    height: 3px;
+    width: 70px;
+    background-color: #4cc37f;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+.profile-card-content h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: lighter;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+.social-media-icons {
+    display: flex;
+    padding: 5% 27% 5% 27%;
+    padding-left: auto;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 62px;
+    background-color: whitesmoke;
+
+}
+
+.social-media-icons img{
+    height: 25px;
+    width: 25px;
+    margin: 0px 10px;
+}
+
+
+/* --------- Project nad resume Buttons ---------*/
+
+
+.projects-button {
+    text-decoration: none;
+    text-align: center;
+    padding: 9px 40px 9px 40px;
+    color: white;
+    border-radius: 40px;
+    border: 1px solid #4cc37f;
+    background-color: #4cc37f;
+    margin-top: 10px;
+    transition: 0.2s;
+    margin-left: 50px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+
+.resume-button {
+    text-decoration: none;
+    text-align: center;
+    padding: 9px 46px 9px 46px;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin: 0px 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.2s;
+    display: inline-block;
+    font-weight: 500;
+}
+
+
+.projects-button:hover{
+    transition: 0.3s;
+    background-color: white;
+    border: 1px solid #4cc37f;
+    color: black;
+
+}
+
+.resume-button:hover {
+    /* padding: 12px 46px 12px 46px; */
+    margin-bottom: -1px;
+    background-color: #4cc37f;
+    border: 1px solid #4cc37f;
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+
+/* =========== Projects page =========== */
+
+
+/* ------------ Title and description ------- */
+
+
+.projects-page {
+    background-color: #e6dbcf;
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.parent-of-project-and-dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-square-dot {
+    background-color: green;
+    height: 18px;
+    width: 18px;
+    margin-top: 110px;
+}
+
+
+#project-main-heading {
+    width: 10%;
+    width: 156px;
+    margin-top: 110px;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+#projects-description {
+    width: 600px;
+    line-height: 27px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* ------------- Projects ------------- */
+
+.project-name {
+    display: flex;
+    margin: 60px 0px 40px 0px
+}
+
+.project-block-1, .project-block-2 {
+    display: flex;
+    width: 746px;
+    margin: auto;
+    margin-top: 75px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.project-block-2 {
+    margin-bottom: 150px;
+}
+
+
+.project-name-side-bar {
+    background-color: green;
+    height: 50px;
+    width: 10px;
+}
+
+#project-title {
+    margin-left: 25px;
+    margin-top: 5px;
+    color: green
+}
+
+.project-links-1, .project-links-2 {
+    height: 385px;
+    width: 140%;
+    border-left: 1px solid black;
+    background-image: url(img/project-1-bc.jpg);
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    
+}
+
+.project-links-2 {
+    background-image: url(img/project-2-bc.jpg);
+}
+
+#project-links-container {
+    text-align: center;
+}
+
+
+#project-info {
+    margin: 0px 7px 0px 35px;
+    font-weight: 100;
+    font-size: 18px
+}
+
+
+/* ------------ Visit and source link buttons------ */
+
+
+
+.visit-link-button, .source-code-button{
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+    padding: 9px 40px 9px 40px;
+    color: white;
+    border-radius: 40px;
+    border: 1px solid #4cc37f;
+    background-color: #4cc37f;
+    transition: 0.2s;
+    display: inline-block;
+    font-weight: 500;
+    margin: 25px 0px;
+}
+
+.visit-link-button:hover, .source-code-button:hover {
+    transition: 0.3s;
+    background-color: white;
+    border: 1px solid #ffffff;
+    color: black;
+
+}
+
+
+
+
+
+/* ========== footer ============ */
+
+
+footer {
+    display: flex;
+    margin: 30px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#copyright {
+    width: 50%;
+    margin: auto;
+    margin-left: 35px;
+    font-weight: 400;
+}
+
+#right-sec-footer {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+
+
+.call-contact, .email-contact, .social-media-contact {
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.call-contact h5, .email-contact a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-size: 15px;
+
+}
+
+.call-contact h4, .email-contact h4, .social-media-contact h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.social-media-contact {
+    margin: 0px 20px;
+}
+
+
+#social-media-footer-icons {
+    display: flex;
+}
+
+.social-media-contact img {
+    height: 16px;
+    margin: 0px 5px;
+}
+
+
+
+
+/* =============contact=============== */
+
+
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea,
+  #contact button[type="submit"] {
+    font: 400 12px/16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  #contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 50px 0 150px 0px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 95%;
+    padding: 0;
+    width: 95%;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+  
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 106.5%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #888;
+  }
+  
+  :-moz-placeholder {
+    color: #888;
+  }
+  
+  ::-moz-placeholder {
+    color: #888;
+  }
+  
+  :-ms-input-placeholder {
+    color: #888;
+  }
+
+  
