@@ -82,10 +82,19 @@
     grid-area: 1 / 1 / 2 / 2;
 }
 
+#parent-of-pfp-card {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: right;
+    width: 45%;
+}
+
+
 .profile-card {
     height: 591px;
-    width: 27%;
-    margin: 127px 0px 0px 250px;
+    /* width: 27%; */
+    width: 385px;
+    margin: 127px 0px 0px 0px;
     background-color: #f5ece7;
     grid-area: 1 / 1 / 2 / 2;
     box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
@@ -98,14 +107,19 @@
 }
 
 
+
+
+
 /* ------- text info right side---------------- */
 
 
 .info-about-me {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     grid-area: 1 / 1 / 2 / 2;
-    width: 35%;
-    margin: 100px 0px 0px 634px;
+    /* width: 35%; */
+    width: 480px;
+    /* margin: 100px 0px 0px 634px; */
+    margin: 100px 0px 0px 45%;
 }
 
 .hello-heading {
@@ -185,7 +199,7 @@
     justify-content: center;
     /* align-items: center; */
     margin-top: 62px;
-    background-color: whitesmoke;
+    background-color: white;
 
 }
 
@@ -447,7 +461,7 @@ footer {
 
 
 
-/* =============contact=============== */
+/* =============  contact =============== */
 
 
 
