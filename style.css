@@ -1,5 +1,6 @@
 * {
     border: 0; margin: 0; padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .site-header {
@@ -339,7 +340,7 @@
 
 
 #projects-description {
-    width: 600px;
+    width: 70%;
     line-height: 27px;
     margin: auto;
     text-align: center;
@@ -388,6 +389,7 @@
     background-size: cover;
     display: grid;
     align-items: center;
+   
     
 }
 
@@ -412,7 +414,8 @@
 
 
 .visit-link-button, .source-code-button{
-    width: 50%;
+    /* width: 50%; */
+    width: 25vmin;
     text-decoration: none;
     text-align: center;
     padding: 9px 40px 9px 40px;
@@ -692,5 +695,13 @@ footer {
 
     #copyright, .social-media-contact {
         display: none;
+    }
+
+    .project-block-1, .project-block-2 {
+        width: auto;
+    }
+
+    .project-links-1, .project-links-2 {
+        height: 33rem;
     }
 }
