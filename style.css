@@ -365,6 +365,15 @@
 }
 
 .project-block-4 {
+    display: flex;
+    width: 746px;
+    margin: auto;
+    margin-top: 75px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.project-block-4 {
     margin-bottom: 150px;
 }
 
